@@ -1,38 +1,44 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <title>نظام تحليل الدوري المصري - زين</title>
-    <style>
-        body { font-family: sans-serif; background: #f4f4f4; text-align: center; }
-        table { margin: 20px auto; border-collapse: collapse; width: 80%; background: white; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
-        th { background-color: #007bff; color: white; }
-        tr:nth-child(even) { background-color: #f2f2f2; }
-    </style>
-</head>
-<body>
-    <h1>نتائج الدوري المصري - نسخة زين 2026</h1>
-    <div id="data-table">جاري تحميل البيانات من GitHub...</div>
+import pandas as pd
 
-    <script>
-        // الابن التاسع: سحب البيانات من ملف الـ CSV الذي أنشأته
-        fetch('egypt_2024_results.csv')
-            .then(response => response.text())
-            .then(data => {
-                let rows = data.split('\n');
-                let table = '<table>';
-                rows.forEach((row, index) => {
-                    let cols = row.split(',');
-                    table += '<tr>';
-                    cols.forEach(col => {
-                        table += index === 0 ? `<th>${col}</th>` : `<td>${col}</td>`;
-                    });
-                    table += '</tr>';
-                });
-                table += '</table>';
-                document.getElementById('data-table').innerHTML = table;
-            });
-    </script>
-</body>
-</html>
+def calculate_league_table(csv_file):
+    # الابن التاسع: التأكد من توافق المدخلات
+    try:
+        df = pd.read_csv(csv_file)
+        teams = pd.unique(df[['Home', 'Away']].values.ravel('K'))
+        stats = {team: {'لعب': 0, 'فوز': 0, 'تعادل': 0, 'هزيمة': 0, 'له': 0, 'عليه': 0, 'نقاط': 0} for team in teams}
+
+        for _, row in df.iterrows():
+            home, away = row['Home'], row['Away']
+            # تحليل النتيجة (مثال: 4–0)
+            score = str(row['Score']).replace('–', '-').split('-')
+            if len(score) != 2: continue
+            
+            h_goals, a_goals = int(score[0]), int(score[1])
+            
+            # تحديث الإحصائيات (الابن الخامس)
+            stats[home]['لعب'] += 1
+            stats[away]['لعب'] += 1
+            stats[home]['له'] += h_goals
+            stats[home]['عليه'] += a_goals
+            stats[away]['له'] += a_goals
+            stats[away]['عليه'] += h_goals
+
+            if h_goals > a_goals:
+                stats[home]['فوز'] += 1 ; stats[home]['نقاط'] += 3
+                stats[away]['هزيمة'] += 1
+            elif h_goals < a_goals:
+                stats[away]['فوز'] += 1 ; stats[away]['نقاط'] += 3
+                stats[home]['هزيمة'] += 1
+            else:
+                stats[home]['تعادل'] += 1 ; stats[home]['نقاط'] += 1
+                stats[away]['تعادل'] += 1 ; stats[away]['نقاط'] += 1
+
+        # ترتيب الجدول (النقاط ثم فارق الأهداف)
+        table = pd.DataFrame.from_dict(stats, orient='index').sort_values(by=['نقاط', 'له'], ascending=False)
+        return table
+    except Exception as e:
+        return f"عطب في البيانات: {e}"
+
+# تشغيل المحلل
+print("--- جدول ترتيب الدوري المصري 23/24 (تحليل نظام زين) ---")
+print(calculate_league_table('egypt_2024_results.csv'))
