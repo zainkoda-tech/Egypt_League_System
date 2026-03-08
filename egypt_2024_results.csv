@@ -1,13 +1,58 @@
 Wk,Date,Home,Score,Away,Venue
 1,2023-09-18,Al Ahly,4–0,Al Masry,Borg El Arab
+1,2023-09-19,ZED FC,1–0,Ismaily,Cairo Stadium
+1,2023-09-20,Smouha,1–1,El Gouna,Alexandria Stadium
 1,2023-09-21,Zamalek,2–2,Pyramids,30 June Stadium
-4,2023-10-21,Zamalek,5-1,Smouha,Cairo Stadium
+2,2023-09-25,Al Bank Al Ahly,0–1,Pyramids,Al Salam Stadium
+2,2023-09-27,Al Masry,1–0,Pharco,Borg El Arab
+2,2023-09-30,Zamalek,1–1,Al Mokawloon,Cairo Stadium
+3,2023-10-05,ZED FC,3–3,Baladiyat Mahalla,Cairo Stadium
+3,2023-10-06,Al Ittihad,2–2,El Gouna,Alexandria Stadium
+3,2023-10-07,Pharco,0–2,Zamalek,Alexandria Stadium
+3,2023-10-08,Al Ahly,3–1,Ismaily,Borg El Arab
+4,2023-10-20,Al Masry,1–0,Al Ittihad,Borg El Arab
+4,2023-10-21,Zamalek,5–1,Smouha,Cairo Stadium
+5,2023-10-27,Pyramids,3–2,Al Masry,Borg El Arab
+5,2023-10-28,Al Ahly,2–1,Ceramica,Al Mokawloon Stadium
+6,2023-11-03,Zamalek,1–2,ZED FC,Cairo Stadium
+6,2023-11-04,Al Ittihad,1–0,Smouha,Alexandria Stadium
+7,2023-11-28,Al Ahly,0–0,Smouha,Al Mokawloon Stadium
+7,2023-11-29,Pyramids,1–0,Ismaily,30 June Stadium
+8,2023-12-04,Zamalek,0–1,Al Ittihad,Cairo Stadium
+8,2023-12-05,Al Masry,1–1,ZED FC,Borg El Arab
+9,2023-12-14,Al Ahly,2–2,Future FC,Al Salam Stadium
+9,2023-12-16,Zamalek,1–0,Al Bank Al Ahly,Cairo Stadium
 10,2024-04-15,Zamalek,2–1,Al Ahly,Cairo Stadium
-11,2024-05-11,Al Ahly,2-1,Baladiyat Mahalla,Cairo Stadium
-14,2024-05-04,Al Ahly,3-0,El Gouna,Cairo Stadium
-25,2024-06-25,Al Ahly,2–0,Zamalek,Cairo Stadium (Awarded)
-27,2024-07-12,Al Ahly,3-2,Pyramids,Cairo Stadium
-28,2024-07-22,Pyramids,0–1,Al Ahly,30 June Stadium
-31,2024-08-08,Al Ahly,1–0,Smouha,Borg El Arab (Champion Match)
-34,2024-08-17,Modern Sport,2-1,Al Ahly,Cairo Stadium
-34,2024-08-17,Baladiyat Mahalla,2-2,Zamalek,Suez Stadium
+11,2024-05-01,Al Ahly,2–1,Ismaily,Borg El Arab
+11,2024-05-02,Zamalek,1–0,Al Bank Al Ahly,Cairo Stadium
+12,2024-05-04,Al Ahly,3–0,El Gouna,Cairo Stadium
+12,2024-05-05,Pyramids,2–1,Future FC,30 June Stadium
+13,2024-05-11,Al Ahly,2–1,Baladiyat Mahalla,Ghazl Al Mahalla
+13,2024-05-15,Zamalek,1–1,Future FC,Al Salam Stadium
+14,2024-05-19,Al Ahly,1–0,Al Ittihad,Borg El Arab
+14,2024-05-23,Zamalek,2–0,Future FC,Cairo Stadium
+15,2024-05-27,Al Masry,2–1,Zamalek,Borg El Arab
+15,2024-05-29,Al Ahly,2–1,Pharco,Alexandria Stadium
+16,2024-06-13,Al Ahly,2–1,Pharco,Cairo Stadium
+16,2024-06-14,Zamalek,1–2,Al Masry,Borg El Arab
+17,2024-06-18,Al Ahly,1–0,Al Ittihad,Cairo Stadium
+17,2024-06-21,Zamalek,3–1,Pharco,Cairo Stadium
+18,2024-06-25,Al Ahly,2–0,Zamalek,Cairo Stadium (Awarded)
+18,2024-06-27,Pyramids,2–1,Al Mokawloon,30 June Stadium
+19,2024-07-01,Al Ahly,4–1,Pharco,Cairo Stadium
+19,2024-07-03,Zamalek,1–1,Pharco,Cairo Stadium
+20,2024-07-07,Al Ahly,2–0,El Dakhleya,Al Salam Stadium
+20,2024-07-08,Pyramids,4–0,Al Ittihad,30 June Stadium
+21,2024-07-12,Al Ahly,3–2,Pyramids,Cairo Stadium
+21,2024-07-15,Zamalek,2–1,Baladiyat Mahalla,Cairo Stadium
+22,2024-07-16,Al Ahly,1–0,Future FC,Cairo Stadium
+22,2024-07-22,Pyramids,0–1,Al Ahly,30 June Stadium
+23,2024-07-26,Al Ahly,1–0,Al Masry,Borg El Arab
+23,2024-07-29,Zamalek,1–1,Pyramids,Cairo Stadium
+24,2024-08-01,Al Ahly,1–0,Al Bank Al Ahly,Cairo Stadium
+25,2024-08-04,Al Ahly,2–1,Al Mokawloon,Cairo Stadium
+26,2024-08-08,Al Ahly,1–0,Smouha,Borg El Arab
+27,2024-08-11,Al Ahly,2–1,ZED FC,Cairo Stadium
+28,2024-08-14,Al Ahly,1–1,ENPPI,Cairo Stadium
+29,2024-08-17,Modern Sport,2–1,Al Ahly,Cairo Stadium
+30,2024-08-17,Baladiyat Mahalla,2–2,Zamalek,Suez Stadium
